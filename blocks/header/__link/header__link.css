@@ -1,0 +1,24 @@
+.header__link {
+	position: relative;
+	margin-right: 45px;
+	font-weight: 700;
+	font-size: 18px;
+	color: #303030;
+	text-decoration: none;
+}
+
+.header__link:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 110%;
+	left: -5%;
+	bottom: -1px;
+	z-index: -1;
+	height: 3px;
+	background: #b20a0a;
+}
+
+.header__link:last-child {
+	margin-right: 0;
+}

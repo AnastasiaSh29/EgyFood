@@ -1,2 +1,7 @@
 .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	border: 2px solid #b20a0a;
 }

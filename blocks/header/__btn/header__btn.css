@@ -1,0 +1,13 @@
+.header__btn {
+	font-family: 'Capriola';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+    height: 55px;
+	margin: auto;
+	background-color: #fff;
+	border: 2px solid #b20a0a;
+	border-radius: 5px;
+	box-shadow: 0 4px 15px rgba(178, 10, 10, .2);
+}

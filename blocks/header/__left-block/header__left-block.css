@@ -1,0 +1,11 @@
+.header__left-block {
+	display: flex;
+	/* justify-content: space-between;
+	min-width: 550px; */
+	height: 150px;
+    width: 250px;
+	background-image: url(../../../images/raimond.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
