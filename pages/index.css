@@ -15,6 +15,28 @@
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__btn/header__btn.css);
 
+@import url(../blocks/preview/preview.css);
+@import url(../blocks/preview/__life/preview__life.css);
+@import url(../blocks/container/container.css);
+@import url(../blocks/tabcontainer/tabcontainer.css);
+@import url(../blocks/tabcontent/tabcontent.css);
+@import url(../blocks/tabcontent/__img/tabcontent__img.css);
+@import url(../blocks/tabcontent/__descr/tabcontent__descr.css);
+@import url(../blocks/tabheader/tabheader.css);
+@import url(../blocks/tabheader/__items/tabheader__items.css);
+@import url(../blocks/tabheader/__item/tabheader__item.css);
+@import url(../blocks/tabheader/__item/_active/tabheader__item_active.css);
+@import url(../blocks/show/show.css);
+@import url(../blocks/fade/fade.css);
+@import url(../blocks/hide/hide.css);
+/*@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks);
+@import url(../blocks); */
+
 
 @import url(../blocks/footer/footer.css);
 

@@ -1,0 +1,10 @@
+.tabcontainer {
+	display: flex;
+	width: 1130px;
+	margin: 0 auto;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+	/* justify-content: space-between; */
+	/* align-items: flex-start; */
+	height: 100%;
+	/* align-items: flex-end; */
+}
