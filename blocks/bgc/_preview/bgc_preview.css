@@ -1,0 +1,9 @@
+.bgc_preview {
+	position: absolute;
+	right: 0;
+	top: -155px;
+	width: 50vw;
+	height: 900px;
+	background: rgba(146, 242, 255, .15);
+	z-index: -1
+}
