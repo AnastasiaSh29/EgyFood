@@ -11,3 +11,6 @@
 	border-radius: 5px;
 	box-shadow: 0 4px 15px rgba(178, 10, 10, .2);
 }
+.header__btn:hover {
+	box-shadow: 0 4px 30px rgba(0, 0, 0, .3)
+}
