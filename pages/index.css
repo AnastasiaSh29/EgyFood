@@ -40,9 +40,18 @@
 @import url(../blocks/timer/timer.css);
 @import url(../blocks/timer/__block/timer__block.css);
 @import url(../blocks/timer/__span/timer__span.css);
-@import url(../blocks);
-@import url(../blocks);
-@import url(../blocks);
+
+
+
+@import url(../blocks/modal/modal.css);
+@import url(../blocks/modal/_show/modal_show.css);
+@import url(../blocks/modal/__window/modal__window.css);
+@import url(../blocks/modal/__content/modal__content.css);
+@import url(../blocks/modal/__close/modal__close.css);
+@import url(../blocks/modal/__title/modal__title.css);
+@import url(../blocks/modal/__input/modal__input.css);
+@import url(../blocks/modal/__btn/modal__btn.css);
+
 
 
 
