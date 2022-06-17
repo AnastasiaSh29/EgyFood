@@ -152,4 +152,71 @@
 
      window.addEventListener('scroll', showModalByScroll);
 
+
+     /*cards */
+     //  
+     // 
+
+     class menuCard {
+         constructor(src, alt, title, descr, price, parentSelector) {
+             this.src = src;
+             this.alt = alt;
+             this.title = title;
+             this.descr = descr;
+             this.price = price;
+             this.parent = document.querySelector(parentSelector);
+             this.transfer = 19;
+             this.changeToLE();
+         }
+
+         changeToLE() {
+             this.price = this.price * this.transfer;
+         }
+
+         render() {
+             const element = document.createElement('div');
+             element.innerHTML = `
+                <div class="menu__item">
+                    <img class="menu__item-img" src=${this.src} alt=${this.alt}>
+                    <h3 class="menu__item-subtitle">${this.title}</h3>
+                    <div class="menu__item-descr">${this.descr}</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Price:</div>
+                        <div class="menu__item-total"><span class="menu__item-span">${this.price}</span> LE/day</div>
+                    </div>
+                </div>
+`;
+             this.parent.append(element);
+         }
+     }
+
+     new menuCard(
+         "images/tabs/Taamea3f.jpg",
+         "Breakfast",
+         'Breakfast',
+         'Breakfast - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores, incidunt et saepe ipsa eaque. Molestias aspernatur dicta recusandae accusamus quibusdam, labore voluptas tenetur adipisci mollitia ad. Est, id mollitia.!',
+         1,
+         '.menu .menu__container'
+     ).render();
+
+     new menuCard(
+         "images/tabs/Makhshi3f.jpg",
+         "Dinner",
+         'Dinner',
+         'Dinner - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores, incidunt et saepe ipsa eaque. Molestias aspernatur dicta recusandae accusamus quibusdam, labore voluptas tenetur adipisci mollitia ad. Est, id mollitia.',
+         4,
+         '.menu .menu__container'
+     ).render();
+
+     new menuCard(
+         "images/tabs/Coffee3f.jpg",
+         "Drinks",
+         'Drinks',
+         'Drinks - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores, incidunt et saepe ipsa eaque. Molestias aspernatur dicta recusandae accusamus quibusdam, labore voluptas tenetur adipisci mollitia ad. Est, id mollitia.',
+         0.5,
+         '.menu .menu__container'
+     ).render();
+
+
  })

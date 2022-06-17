@@ -53,6 +53,19 @@
 @import url(../blocks/modal/__btn/modal__btn.css);
 
 
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__title/menu__title.css);
+@import url(../blocks/menu/__field/menu__field.css);
+@import url(../blocks/menu/__container/menu__container.css);
+@import url(../blocks/menu/__item/menu__item.css);
+@import url(../blocks/menu/__item-img/menu__item-img.css);
+@import url(../blocks/menu/__item-subtitle/menu__item-subtitle.css);
+@import url(../blocks/menu/__item-descr/menu__item-descr.css);
+@import url(../blocks/menu/__item-divider/menu__item-divider.css);
+@import url(../blocks/menu/__item-price/menu__item-price.css);
+@import url(../blocks/menu/__item-span/menu__item-span.css);
+
+
 
 
 @import url(../blocks/footer/footer.css);
