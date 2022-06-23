@@ -153,9 +153,7 @@
      window.addEventListener('scroll', showModalByScroll);
 
 
-     /*cards */
-     //  
-     // 
+     /*cards */ 
 
      class menuCard {
          constructor(src, alt, title, descr, price, parentSelector, ...classes) {
@@ -222,6 +220,44 @@
          0.5,
          '.menu .menu__container'
      ).render();
+     
 
+     /*сonverter */
+
+     const inputRub = document.querySelector('#rub');
+    const inputUsd = document.querySelector('#usd');
+    const inputLe = document.querySelector('#le');
+
+    inputRub.addEventListener('input', ()=>{
+        const request = new XMLHttpRequest(); // встроенный запрос
+
+        request.open('GET', 'scripts/current.json'); // метод
+        request.setRequestHeader('Content-type', 'application/json; charset=utf-8'); //метод (тип контента, его тип, кодировка) заголовки
+        request.send(); // метод отправки
+
+        request.addEventListener('load', ()=>{
+            //request.addEventListener('readystatechange', ()=>{ //статус готовности запроса
+            if( request.status === 200){
+                //if(request.readyState === 4 && request.status === 200){
+                    // console.log(request.response); //ответ от сервера
+                    const data = JSON.parse(request.response); //распарсили ответ
+                    inputUsd.value =(+inputRub.value / data.current.usd).toFixed(2);
+                    inputLe.value =(+inputRub.value / data.current.le).toFixed(2);
+
+
+
+                }else{
+                    inputUsd.value = "Что-то пошло не так";
+                    inputLe.value = "Что-то пошло не так";
+                }
+            });
+
+
+    
+    
+    
+    
+    
+    });
 
  })

@@ -65,7 +65,9 @@
 @import url(../blocks/menu/__item-price/menu__item-price.css);
 @import url(../blocks/menu/__item-span/menu__item-span.css);
 
-
+@import url(../blocks/сonverter/сonverter.css);
+@import url(../blocks/сonverter/__input/сonverter__input.css);
+@import url(../blocks/сonverter/__label/сonverter__label.css);
 
 
 @import url(../blocks/footer/footer.css);

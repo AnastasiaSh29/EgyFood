@@ -1,0 +1,7 @@
+.сonverter{
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 35px 0 35px;
+    background-color: rgba(249, 254, 126, .25);
+    padding: 35px 0;
+}
